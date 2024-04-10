@@ -1,0 +1,59 @@
+
+/* THIS CONTROLLS AND MANAGE OUR PADDING FOR US */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+header{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 25px;
+}
+.navbar {
+    background-color: rgb(49, 45, 45);
+    height: 50px;
+}
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+section button {
+    background-color: rgb(59, 55, 55);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 90px;
+    border-radius: 4px;
+}
+
+article { 
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+footer{
+    /* THIS CLEARS THE "float: left;" FROM APPLING HERE */
+    display: block;
+    clear: both;
+
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 25px;
+}
+
+/* PAGE RESPONSIVINESS */
+/* APPLICABLE FOR 600px AND BELOW */
+@media screen and (max-width: 600px) {
+    aside, section, article {
+        width: 100%;
+    }
+}
